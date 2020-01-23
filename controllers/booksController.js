@@ -5,7 +5,7 @@ module.exports = {
 
     searchApi: (req, res) => {
 
-        axios.get("https://www.googleapis.com/books/v1/volumes?q=flowers")
+        axios.get("https://www.googleapis.com/books/v1/volumes?q=")
             .then((response) => res.json(response.data))
             .catch(err => res.status(422).json(err))
 
